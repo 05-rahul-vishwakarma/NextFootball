@@ -297,14 +297,14 @@ const Signup = () => {
     return (
         <div className="flex relative min-h-[100dvh] flex-col justify-center px-6 py-12 lg:px-8 bg-[#80808013] ">
             <div className="absolute top-0 left-0 z-[-1]  h-full w-full">
-                {/* <Image
+                <Image
                     fill
                     style={{ objectFit: "cover" }}
                     alt="background"
-                    src={"/login_bg.jpg"}
-                /> */}
+                    src={"/updates/login.webp"}
+                />
             </div>
-            <div className="mt-10 text-black sm:mx-auto sm:w-full sm:max-w-sm">
+            <div className="mt-10 text-white sm:mx-auto sm:w-full sm:max-w-sm">
                 <motion.form onSubmit={sendData} className="space-y-3">
                     <motion.div
                         initial="hidden"

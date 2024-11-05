@@ -123,7 +123,7 @@ function CommissionPopModel({
                                 type="radio"
                                 checked={selectedLevel === 1}
                                 onChange={() => updateLevel(1)}
-                                className="text-blue-500  size-5 radio-primary outline-blue-400"
+                                className="text-[#008000d7]  size-5 radio-primary outline-blue-400"
                                 name="level"
                             />
                         </div>
@@ -133,7 +133,7 @@ function CommissionPopModel({
                                 type="radio"
                                 checked={selectedLevel === 2}
                                 onChange={() => updateLevel(2)}
-                                className="text-blue-500 size-5 radio-primary outline-blue-400"
+                                className="text-[#008000d7] size-5 radio-primary outline-blue-400"
                                 name="level"
                             />
                         </div>
@@ -143,7 +143,7 @@ function CommissionPopModel({
                                 type="radio"
                                 checked={selectedLevel === 3}
                                 onChange={() => updateLevel(3)}
-                                className="text-blue-500 size-5 radio-primary outline-blue-400"
+                                className="text-[#008000d7] size-5 radio-primary outline-blue-400"
                                 name="level"
                             />
                         </div>

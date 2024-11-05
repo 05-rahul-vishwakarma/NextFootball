@@ -56,11 +56,12 @@ function Page() {
       <section className="h-screen bg-[#F8FCFF] ">
         {loading && <Loading />}
 
-        {/* <Link href="/profile/help/">
+        <Link href="/profile/help/">
           <div className="pt-3   ">
             <BackButton pageName="Help?" />
           </div>
-        </Link> */}
+        </Link>
+        
         <Back page={"help?"} />
 
         <div className="mt-[2rem] w-[90%]  mr-auto ml-auto  ">

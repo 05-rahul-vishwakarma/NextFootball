@@ -103,7 +103,7 @@ function page() {
 
   return (
     <Layout>
-      <section className="w-dvw h-dvh flex overflow-x-hidden flex-col items-center bg-gradient-to-t from-[#A3CBEE] to-[#FFC0C2] overflow-y-scroll pb-[12rem]  ">
+      <section className="w-dvw h-dvh flex overflow-x-hidden flex-col items-center bg-gradient-to-t from-[#a3eec8] to-[#cbffc0] overflow-y-scroll pb-[12rem]  ">
         {/* loading component here */}
         {loading && <Loading />}
 
@@ -111,7 +111,7 @@ function page() {
           <Image src={"/payzApp.png"} alt="logo" width={180} height={100} />
         </div>
         <div className="flex justify-between w-[90%] px-2 text-[.6rem] mt-4  ">
-          <p className="font-semibold text-[#004B8D] ">#Order Id {Math.floor(Math.random()*100000)}</p>
+          <p className="font-semibold text-[#c22424e8] ">#Order Id {Math.floor(Math.random()*100000)}</p>
           <span className="flex items-center font-semibold ">
             <Suspense>
               <RechargeAmount getAmount={setAmount} />
@@ -127,7 +127,7 @@ function page() {
               style={{
                 border: " 1px solid rgba(0, 0, 0, 0.05)",
               }}
-              className="bg-[#EBEBEB] pl-2 py-1 rounded-t-[15px] text-[gray] "
+              className="bg-[#ebebeb] pl-2 py-1 rounded-t-[15px] text-[gray] "
             >
               Account Holder Name
             </div>
@@ -208,7 +208,7 @@ function page() {
               style={{
                 border: " 1px solid rgba(0, 0, 0, 0.05)",
               }}
-              className=" bg-[#2885F6] pl-2 py-1 rounded-t-[15px] text-[#FFF] "
+              className=" bg-[#008000d7] pl-2 py-1 rounded-t-[15px] text-[#FFF] "
             >
               Reference Number
             </div>
@@ -231,10 +231,10 @@ function page() {
             onClick={() => btndisbaled()}
             disabled={disabled}
             style={{
-              backgroundColor: disabled ? "#5A5A5A" : "#2885F6",
+              backgroundColor: disabled ? "#5A5A5A" : "#008000d7",
               boxShadow: "0 0 5px 0 #c0cad9",
             }}
-            className="bg-[#2885F6] text-center p-3 mt-2 rounded-lg flex justify-center place-items-center text-[#fff] "
+            className="bg-[#008000d7] text-center p-3 mt-2 rounded-lg flex justify-center place-items-center text-[#fff] "
           >
             Recharge
           </div>
@@ -266,7 +266,7 @@ const InputWithCopyIcon = ({ value }) => {
   return (
     <div className="w-full flex justify-between items-center ">
       <input type="text" value={value} readOnly />
-      <button style={{ color: "#2885F6" }} onClick={copyToClipboard}>
+      <button style={{ color: "#008000d7" }} onClick={copyToClipboard}>
         {copied ? "Copied!" : "Copy"}
       </button>
     </div>

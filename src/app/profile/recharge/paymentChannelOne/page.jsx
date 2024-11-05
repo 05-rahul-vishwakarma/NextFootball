@@ -100,13 +100,13 @@ function Page() {
 
     return (
         <Layout>
-            <div className="bg-white  w-full h-full  flex justify-center overflow-y-scroll pb-[12rem] ">
+            <div className="bg-[#f2f5f2]  w-full h-full  flex justify-center overflow-y-scroll pb-[12rem] ">
                 <div className="w-[90%]  h-full flex flex-col  ">
                     <div
                         style={{
                             boxShadow: "0 0 4px 0 #c0cad9",
                         }}
-                        className="border-2 border-white shadow-md my-[2rem] w-[100%] py-3 flex  justify-center place-items-center flex-col rounded-lg "
+                        className="border-2  border-BorderColor shadow-md my-[2rem] w-[100%] py-3 flex  justify-center place-items-center flex-col rounded-lg "
                     >
                         <Suspense>
                             <RechargeAmount getAmount={setAmount} />
@@ -114,68 +114,8 @@ function Page() {
                         <p className="text-[.6rem] ">Payment Amount</p>
                     </div>
 
-                    <div className=" flex justify-center items-center ">
-                        <Image
-                            src={"/upiPaymentOne.svg"}
-                            alt="upi image"
-                            width={150}
-                            height={100}
-                        />
-                    </div>
+                    
 
-                    <div className="flex w-[60%] mr-auto ml-auto justify-around ">
-                        <Image
-                            onClick={() =>
-                                UpiRedirect(
-                                    amount,
-                                    upiId[
-                                        Math.floor(
-                                            Math.random() * upiId?.length
-                                        )
-                                    ]
-                                )
-                            }
-                            src={"/paytm.png"}
-                            alt="paytm"
-                            width={55}
-                            height={55}
-                            className="object-contain rounded-full "
-                        />
-                        <Image
-                            onClick={() =>
-                                UpiRedirect(
-                                    amount,
-                                    upiId[
-                                        Math.floor(
-                                            Math.random() * upiId?.length
-                                        )
-                                    ]
-                                )
-                            }
-                            src={"/phonePay.svg"}
-                            alt="paytm"
-                            width={55}
-                            height={55}
-                            className="object-contain rounded-full "
-                        />
-                        <Image
-                            onClick={() =>
-                                UpiRedirect(
-                                    amount,
-                                    upiId[
-                                        Math.floor(
-                                            Math.random() * upiId?.length
-                                        )
-                                    ]
-                                )
-                            }
-                            src={"/GooglePay.svg"}
-                            alt="paytm"
-                            width={55}
-                            height={55}
-                            className="object-contain rounded-full "
-                        />
-                    </div>
 
                     <div className="h-[30vh] grid place-items-center  ">
                         <div className="h-[90%] w-[60%] flex justify-center items-center  ">
@@ -199,9 +139,9 @@ function Page() {
 
                     <div
                         style={{ boxShadow: "0 0 5px 0 #c0cad9" }}
-                        className="bg-[white] mt-4 flex place-items-center border-2 rounded-lg border-[#2885F6] "
+                        className="bg-[white] mt-4 flex place-items-center border-2 rounded-lg border-BorderColor "
                     >
-                        <p className="w-[20%] rounded-l-sm text-center bg-[#2885F6] text-white py-2  text-[.8rem] font-semibold focus-wit  ">
+                        <p className="w-[20%] rounded-l-sm text-center bg-ButtonGreen text-white py-2  text-[.8rem] font-semibold focus-wit  ">
                             UTR
                         </p>
                         <input
@@ -217,10 +157,10 @@ function Page() {
                         onClick={() => btndisbaled()}
                         disabled={disabled}
                         style={{
-                            backgroundColor: disabled ? "#5A5A5A" : "#2888f6",
+                            backgroundColor: disabled ? "#5A5A5A" : "#008000d7",
                             boxShadow: "0 0 5px 0 #c0cad9",
                         }}
-                        className="bg-[#2888f6] rounded-lg text-center p-3 mt-4 flex justify-center items-center text-white  text-[.7rem] "
+                        className="bg-ButtonGreen rounded-lg text-center p-3 mt-4 flex justify-center items-center text-white  text-[.7rem] "
                     >
                         pay
                     </div>
@@ -247,7 +187,7 @@ function RechargeAmount({ getAmount }) {
     return (
         <div className="flex  items-center ">
             <LiaRupeeSignSolid />
-            <h1 className="text-[.7rem] font-semibold text-[#2888f6] ">
+            <h1 className="text-[.7rem] font-semibold text-[#008000d7] ">
                 {receivedAmount}
             </h1>
         </div>

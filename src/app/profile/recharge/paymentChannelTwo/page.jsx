@@ -264,9 +264,9 @@ function Page() {
                                 style={{
                                     backgroundColor: disabled
                                         ? "#5A5A5A"
-                                        : "#2885F6",
+                                        : "#008000d7",
                                 }}
-                                className="bg-[#2885F6] text-white  w-[23%]  text-[.65rem] "
+                                className="bg-[#008000d7] text-white  w-[23%]  text-[.65rem] "
                             >
                                 Submit
                             </button>
@@ -274,37 +274,6 @@ function Page() {
                     </div>
                 </div>
 
-                <div className="w-[90%] mr-auto ml-auto pb-2 ">
-                    <p className="text-center mt-5 text-red-600 text-xs  ">
-                        Important reminder: After completing the UPI
-                        transaction,please backfill Ref No./UTR No./Google Pay :
-                        UPI Transaction ID/Freecharge: Transaction ID
-                        (12digits). If you do not back fill UTR, 100% of the
-                        deposit transaction will fail. Please be sure to
-                        backfill!
-                    </p>
-                    <div className="w-[100%] mt-2  ">
-                        <Image
-                            src={"/channeltwo.png"}
-                            alt="paytm"
-                            width={100}
-                            height={100}
-                            className=" w-[100%] h-full object-contain "
-                        />
-                    </div>
-                </div>
-
-                <div className="h-[1rem] w-full bg-[#e0dfdf] "></div>
-
-                <div className="w-[90%] h-[100%]  mr-auto ml-auto mt-2 ">
-                    <Image
-                        src={"/channelTwoInst.png"}
-                        alt="paytm"
-                        width={100}
-                        height={100}
-                        className="object-contain w-[100%] h-full  "
-                    />
-                </div>
             </div>
         </Layout>
     );
@@ -350,7 +319,7 @@ function RechargeAmount({ getAmount }) {
 
     return (
         <div className="flex  items-center ">
-            <p className="ml-1 text-[.65rem] font-semibold text-[#2885F6] ">
+            <p className="ml-1 text-[.65rem] font-semibold text-ButtonGreen ">
                 {" "}
                 {receivedAmount}{" "}
             </p>
