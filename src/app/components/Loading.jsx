@@ -41,21 +41,21 @@ function Loading() {
                             r="60"
                             gradientUnits="userSpaceOnUse"
                         >
-                            <stop offset=".68" stopColor="#f9a8d4" />
-                            <stop offset=".72" stopColor="#f9a8d4" />
-                            <stop offset=".77" stopColor="#f9a8d4" />
-                            <stop offset=".82" stopColor="#f9a8d4" />
-                            <stop offset=".88" stopColor="#f9a8d4" />
-                            <stop offset=".93" stopColor="#f9a8d4" />
-                            <stop offset=".99" stopColor="#ebe6fb" />
-                            <stop offset="1" stopColor="#f1eefb" />
+                            <stop offset=".68" stopColor="#008000d7" /> {/* Custom green */}
+                            <stop offset=".72" stopColor="#008000d7" />
+                            <stop offset=".77" stopColor="#008000d7" />
+                            <stop offset=".82" stopColor="#008000d7" />
+                            <stop offset=".88" stopColor="#008000d7" />
+                            <stop offset=".93" stopColor="#008000d7" />
+                            <stop offset=".99" stopColor="#b4deb4" /> {/* Very light green */}
+                            <stop offset="1" stopColor="#e6f2e6" /> {/* Almost white green */}
                         </radialGradient>
                     </defs>
                     <circle
                         id="fillDot"
                         cx="400"
                         cy="300"
-                        fill="#f9a8d4"
+                        fill="#008000d7" // Custom solid green fill
                         r="60"
                     />
                     <circle
